@@ -8,7 +8,7 @@ class TenYearsLater
         DateTime currentDateTime = DateTime.Now;
         int currentYear = currentDateTime.Year;
         int currentMonth = currentDateTime.Month;
-        System.Console.WriteLine("Въведете дата  на раждане:");
+        System.Console.WriteLine("Въведете дата на раждане:");
         string birthday = System.Console.ReadLine();
         DateTime birthdayDate = DateTime.Parse(birthday);
         int birthdayYear = birthdayDate.Year;
