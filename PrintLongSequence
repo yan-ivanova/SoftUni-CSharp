@@ -1,0 +1,30 @@
+using System;
+class PrintLongSequence
+{
+    static void Main()
+    {
+        int two = 2;
+        for (int seqNumber = 2; seqNumber < 1002; seqNumber++)
+        {
+            int remainder = seqNumber % two;
+            if (remainder == 0)
+            {
+                System.Console.Write(seqNumber);
+                if ((seqNumber + 1) < 1002)
+                {
+                    System.Console.Write(", ");
+                }
+            }
+            else
+            {
+                int negativeSeqNumber = -seqNumber;
+                System.Console.Write(negativeSeqNumber);
+                if ((seqNumber + 1) < 1002)
+                {
+                    System.Console.Write(", ");
+                }
+            }
+        }
+        System.Console.WriteLine();
+    }
+}
