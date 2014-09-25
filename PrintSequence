@@ -3,14 +3,14 @@ class PrintSequence
 {
     static void Main()
     {
-        int two = 2;
+        int two =2;
         for (int seqNumber = 2; seqNumber < 12; seqNumber++)
         {
             int remainder = seqNumber % two;
             if (remainder == 0)
             {
                 System.Console.Write(seqNumber);
-                if ((seqNumber + 1) < 12)
+                if ((seqNumber +  1) < 12)
                 {
                     System.Console.Write(", ");
                 }
