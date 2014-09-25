@@ -1,0 +1,29 @@
+using System;
+class TenYearsLater
+{
+    static void Main()
+    {
+        int presentYears;
+        int futureYears;
+        DateTime currentDateTime = DateTime.Now;
+        int currentYear = currentDateTime.Year;
+        int currentMonth = currentDateTime.Month;
+        System.Console.WriteLine("Въведете дата на раждане:");
+        string birthday = System.Console.ReadLine();
+        DateTime birthdayDate = DateTime.Parse(birthday);
+        int birthdayYear = birthdayDate.Year;
+        int birthdayMonth = birthdayDate.Month;
+        if (currentMonth < birthdayMonth)
+        {
+            presentYears = currentYear - birthdayYear - 1;
+            futureYears = presentYears + 10;
+        }
+        else
+        {
+            presentYears = currentYear - birthdayYear;
+            futureYears = presentYears + 10;
+        }
+        System.Console.WriteLine("You are " + presentYears + " years old.");
+        System.Console.WriteLine("After 10 years you will be " + futureYears + " years old.");
+    }
+}
